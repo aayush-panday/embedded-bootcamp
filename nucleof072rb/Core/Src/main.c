@@ -135,7 +135,7 @@ int main(void)
     /* USER CODE BEGIN 3 */
 	  uint16_t adcValue = MCP3004_Read(0);
 
-	  uint32_t pulseWidth = 1000 + ((uint32_t)adcValue * 1000) / 1023;
+	  uint32_t pulseWidth = 3200 + ((uint32_t)adcValue * 3200) / 1023;
 
 	  __HAL_TIM_SET_COMPARE(&htim1, TIM_CHANNEL_1, pulseWidth);
 
